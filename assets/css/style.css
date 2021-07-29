@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu&display=swap');
+
+/* ---------------------------------------General */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+} */
+
+/* ---------------------------------------Header */
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+}
+
+/* .header-area {
+
+    height: 150px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .header-area a {
+    text-decoration: none;
+} */
+
+/* .header-area a h1 {
+    font-family: Ubuntu, 'PT Sans';
+    font-size: 100px;
+
+} */
+
+
+body {
+    font-family: Ubuntu, 'PT Sans';
+    font-weight: 600;
+    color: #646464;
+}
+
+.nav-area {
+    padding: 20px;
+}
+
+.nav-area a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+#logo {
+    font-size: 150%;
+    color: #606160;
+    margin-left: 10px;
+
+}
+
+#nav li {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+
+#nav a {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#nav a:hover {
+    border-bottom: 1px solid #a3a0a0;
+}
+
+.active {
+    border-bottom: 1px solid #a3a0a0;
+}
+
+.menucontainer {
+    font-size: 0;
+    margin-bottom: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
