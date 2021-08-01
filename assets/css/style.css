@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Ubuntu&display=swap');
 
 /* ---------------------------------------General */
 
@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* h1,
@@ -19,35 +24,21 @@ h4 {
 
 header {
     background-color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 header h1 {
+    font-family: Anton, Ubuntu, 'PT Sans';
+    font-size: 100px;
+    letter-spacing: 4px;
     color: rgb(255, 255, 255);
 }
-
-/* .header-area {
-
-    height: 150px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-/* .header-area a {
-    text-decoration: none;
-} */
-
-/* .header-area a h1 {
-    font-family: Ubuntu, 'PT Sans';
-    font-size: 100px;
-
-} */
 
 
 body {
     font-family: Ubuntu, 'PT Sans';
     font-weight: 600;
-    color: #646464;
+    color: #C0C0C0;
 }
 
 .nav-area {
@@ -59,6 +50,34 @@ body {
     color:rgb(255, 255, 255);
 }
 
+.navbar {
+    background-color: #000;
+    align-content: center;
+}
+
+.navbar-toggler.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#menu {
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px;
+}
+
 #logo {
     font-size: 150%;
     color: #606160;
@@ -66,11 +85,11 @@ body {
 
 }
 
-#nav li {
+/* #nav li {
     font-size: 20px;
     text-align: center;
     padding: 5px 0 5px 0;
-}
+} */
 
 
 #nav a {
@@ -82,15 +101,171 @@ body {
     border-bottom: 1px solid #a3a0a0;
 }
 
+
+
 .active {
     border-bottom: 1px solid #a3a0a0;
 }
+
+
 
 .menucontainer {
     font-size: 0;
     margin-bottom: 0;
 }
 
+
+
+/* ---------------------------------------index.html */
+
+.text-image {
+    height: 1200px;
+    width: 100%;
+    background-image: url('../images/football\ background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#welcome {
+    text-align: center;
+    padding: 200px 0 20px 0;
+}
+
+#get-started-button {
+    padding-top: 50px;
+}
+
+#get-started-button a {
+    color:#000;
+}
+
+/* ---------------------------------------Legends */
+
+.jumbotron {
+    background-color: rgba(155, 153, 153, 0.2);
+}
+
+.players li {
+    text-align: center;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    color: #C0C0C0;
+}
+
+.players img {
+    /* border: 1px solid #ddd; */
+    padding: 5px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+}
+
+.players-text {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
 .list-inline-item:not(:last-child) {
     margin: 0;
+}
+
+
+/* ---------------------------------------Footer */
+
+/* .footer-area {
+    background-color: #000;
+    padding: 10px 0;
+    margin: 0;
+} */
+
+.where-to-find-us {
+    text-transform: uppercase;
+    color: inherit;
+    width: 100%;
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.social-links {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #000;
+    
+}
+
+.social-area li {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    color: #C0C0C0;
+    
+}
+
+.social-area li a {
+    text-decoration: none;
+}
+
+.social-links li a i {
+    height: 30px;
+    color: #C0C0C0;
+    font-size: 26px;
+    font-family: Ubuntu, 'PT Sans';
+    text-align: center;
+    
+}
+
+.social-links li a span {
+    color: #606160;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+/* #facebook i {
+    color: #3b5998;
+}
+
+#twitter i {
+    color: #1DA1F2;
+}
+
+#instagram i {
+    color: #833AB4;
+}
+
+#pinterest i {
+    color: #E60023;
+} */
+
+/* ---------------------------------------Media Queries */
+
+@media screen and (max-width: 576px) {
+    
+    .header-area a h1 {
+        /* color: #5d0000; */
+        text-align: center;
+        padding-top: 30px;
+        /* font-family: Italianno, sans-serif; */
+        font-size: 75px;
+    
+    }
+
+    .text-image {
+        padding-top: 50px;
+    }
+
+    .social-area li {
+        text-align: center;
+    }
+
+    .social-links li a span {
+        display: none;
+    }
+
+
+
 }
