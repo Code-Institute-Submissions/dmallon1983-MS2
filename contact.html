@@ -87,8 +87,8 @@
                         social accounts! </p>
                 </div>
             </div>
-            <section class="contact-form bg-color">
-                <form action="https://formdump.codeinstitute.net/" method="POST" class="signup-form">
+            <section class="contactForm bg-color">
+                <form  onsubmit="return sendMail(this);" class="signup-form">
                     <h3>Choose your Legend</h3>
                     <div>
                         <label for="name">Name:</label>
@@ -105,7 +105,7 @@
                             placeholder="eg. David Beckham">
                     </div>
                     <label for="contact-text-area">Tell us why...</label>
-                    <textarea id="contact-text-area" cols="100" rows="10" name="contact_us"
+                    <textarea id="contact-text-area" cols="100" rows="10" name="reason"
                         placeholder="eg. The best right foot I've ever seen. Beckham could put put crosses into the box better than anyone in the history of the sport and his set pieces are legendary..."></textarea>
                     <input class="btn btn-primary" type="submit" value="Submit">
                 </form>
@@ -147,6 +147,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
