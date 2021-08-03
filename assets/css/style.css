@@ -142,8 +142,50 @@ body {
 
 /* ---------------------------------------Legends */
 
-.jumbotron {
-    background-color: rgba(155, 153, 153, 0.2);
+.background-image {
+    background-color: #000;
+}
+    /* height: 100%;
+    width: 100%;
+    background-image: url('../images/pitch.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
+
+
+
+.jumbotron.goalkeepers {
+    background-color: rgba(155, 153, 153, 0.1);
+    background-image: url('../images/GK.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jumbotron.defenders {
+    background-color: rgba(155, 153, 153, 0.1);
+    background-image: url('../images/DF.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jumbotron.midfielders {
+    background-color: rgba(155, 153, 153, 0.1);
+    background-image: url('../images/MF.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jumbotron.forwards {
+    background-color: rgba(155, 153, 153, 0.1);
+    background-image: url('../images/CF.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 0;
 }
 
 .players li {
@@ -161,18 +203,136 @@ body {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-   
+}
+
+.img-area li {
+    width: 100%;
 }
 
 .players-text {
     text-align: center;
-    padding: 10px 20px;
+    padding-top: 10px;
   }
 
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
+/* ---------------------------------------Your 11 */
+
+.pitch-image {
+    height: 1000px;
+    width: 100%;
+    background-image: url('../images/football\ background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* .eleven-intro {
+    text-align: center;
+    padding: 50px;
+} */
+
+.pitch-image ul {
+    margin: 0;
+}
+
+.pitch {
+    margin-top: 10%;
+    background-color: rgba(155, 153, 153, 0.1);
+    background-image: url('../images/pitch\ \(1\).jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90%;
+    text-align: center;
+}
+
+.box img {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 25%;
+    width: 75px;
+    height: 75px;
+}
+
+.player-dropdown p {
+    text-align: center;
+}
+
+.gk {
+    padding: 20px 0 20px 0;
+}
+
+.cm {
+    padding: 50px 0 20px 0;
+}
+
+.am {
+    padding-top: 50px;
+}
+
+.wf {
+    padding-top: 30px;
+}
+
+.cf {
+    padding-bottom: 40px;
+}
+
+/* ---------------------------------------contact.html */
+
+.contact-text {
+    width: 50%;
+    padding: 20px;
+    margin: 0 25%;
+}
+
+.contact-form {
+    padding: 20px 25%;
+}
+
+/* credit: Styling and code for from used from Code Institute Love Running page and adjusted to suit */
+
+.text-input {
+    font-family: 'Noto Serif', sans-serif;
+    color: #000;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    margin: 5px 0 20px 0;
+    border: 1px solid #606160;
+    border-radius: 2px;
+}
+
+.signup-form {
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    min-width: 50%;
+    padding: 30px;
+}
+
+#contact-text-area {
+    max-width: 95%;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signup-form h3 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.radio-section {
+    padding: 20px 0;
+}
+
+.radio-btn {
+    font-weight: 400;
+}
 
 /* ---------------------------------------Footer */
 
@@ -266,6 +426,15 @@ body {
         display: none;
     }
 
+    .players li p {
+        display: none;
+    }
 
+    .players img {
+        text-align: center;
+        /* padding: 0 20px 0 20px; */
+        height: 100px;
+        width: 100px;
+    }
 
 }
