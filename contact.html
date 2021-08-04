@@ -88,7 +88,7 @@
                 </div>
             </div>
             <section class="contactForm bg-color">
-                <form  onsubmit="return sendMail(this);" class="signup-form">
+                <form  onsubmit="return sendMail(this);" id="signup-form">
                     <h3>Choose your Legend</h3>
                     <div>
                         <label for="name">Name:</label>
@@ -99,7 +99,7 @@
                         <input id="email" type="email" name="email_address" required class="text-input"
                             placeholder="yourname@email">
                     </div>
-                    <div>
+                    <div id="legend">
                         <label for="name">My Legend:</label>
                         <input id="legend" type="text" name="legend" required class="text-input"
                             placeholder="eg. David Beckham">

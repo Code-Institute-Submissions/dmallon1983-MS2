@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <script src="https://kit.fontawesome.com/b053ee9d06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Your Best 11</title>
@@ -38,32 +37,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- <div class="nav-area">
-            <nav>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html" class="active">Home</a>
-                        </li>
-                        <li>
-                            <a href="legends.html">Legends</a>
-                        </li>
-                        <li>
-                            <a href="your_eleven.html">Your 11</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Be a Legend</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> -->
     </header>
     <section class="background-image">
         <section>
@@ -97,43 +70,78 @@
                     <div class="row no-gutters">
                         <div class="col players">
                             <ul class="img-area">
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="yashin"><img
                                         src="assets/images/Lev Yashin head.jpg" alt="Lev Yashin">
                                     <div class="players-text">
                                         <p>Lev Yashin</p>
                                     </div>
                                 </li>
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
+
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="banks"><img
                                         src="assets/images/Gordon Banks head.jpg" alt="Gordon Banks">
                                     <div class="players-text">
                                         <p>Gordon Banks</p>
                                     </div>
                                 </li>
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
-                                        src="assets/images/Buffon head.jpg" alt="Gianluigi Buffon">
+
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="buffon">
+                                    <img src="assets/images/Buffon head.jpg" alt="Gianluigi Buffon">
                                     <div class="players-text">
                                         <p>Gianluigi Buffon</p>
                                     </div>
                                 </li>
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
+
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="neuer"><img
                                         src="assets/images/Neuer head.jpg" alt="Manuel Neuer">
                                     <div class="players-text">
                                         <p>Manuel Neuer</p>
                                     </div>
                                 </li>
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
+
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="vanDerSar"><img
                                         src="assets/images/Van Der Sar head.jpg" alt="Edwin Van Der Sar">
                                     <div class="players-text">
                                         <p>Edwin Van Der Sar</p>
                                     </div>
                                 </li>
-                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item"><img
+
+                                <li class="col-lg-2 col-sm-6 col-md-3 list-inline-item" data-player="casillas"><img
                                         src="assets/images/Casillas head.jpg" alt="Iker Casillas">
                                     <div class="players-text">
                                         <p>Iker Casillas</p>
                                     </div>
                                 </li>
                             </ul>
+                            <div class="modal fade" id="bioModalScrollable" tabindex="-1" role="dialog" aria-labelledby="bioModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="bioModalScrollableTitle">Modal title</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-position">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-nation">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-caps">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-goals">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -427,7 +435,10 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div id="map"></div>
         </section>
+    </section>
     <footer>
         <div class="social-links">
             <div class="row no-gutters">
@@ -462,6 +473,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -471,6 +483,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="assets/js/legends.js"></script>
 </body>
 
 </html>
