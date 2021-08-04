@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/b053ee9d06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Your Best 11</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 </head>
 
 <body>
@@ -435,8 +437,22 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="map"></div>
+        <section class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-4">
+                            <h2>Where are Legends Made?</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-3">
+                            <p>Here you can see where each legend was born? Are you close to any Legends birthplace? If so, why not visit the town or city of their birth?</p>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div id="map"></div>
+                </div>
+            </div>
         </section>
     </section>
     <footer>
@@ -473,7 +489,21 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+       function initMap() {
+           var map = new google.maps.Map(document.getElementById("map"), {
+               zoom: 2,
+               center: {
+                   lat: 20,
+                   lng: 0
+               } 
+           });
+       }
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArpoB_7Qp0mD_N4SWVfOm13yxNU0OKBgM&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

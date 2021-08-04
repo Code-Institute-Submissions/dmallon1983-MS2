@@ -124,39 +124,7 @@
 //     bio: "Carlos Alberto Torres (17 July 1944 – 25 October 2016), was a Brazilian football player and manager who played as an attacking right-sided full-back or wing-back. A technically gifted defender with good ball skills and defensive capabilities, he is widely regarded as one of the best defenders of all time. He also stood out for his leadership, and was an excellent penalty taker. Nicknamed O Capitão, he captained the Brazil national team to victory in the 1970 World Cup, scoring the fourth goal in the final, considered one of the greatest goals in the history of the tournament. Carlos Alberto was a member of the World Team of the 20th Century, and in 2004 was named by Pelé in the FIFA 100 list of the world's greatest living players. He was an inductee to the Brazilian Football Museum Hall of Fame, and was a member of the U.S. National Soccer Hall of Fame."
 //   }
 
-//   const players = {
-//     buffon: {
-//       name: "Gianluigi Buffon",
-//       position: "Goalkeeper",
-//       nationality: "Italian",
-//       caps: "176",
-//       goals: "0",
-//       bio: "Gianluigi Buffon (born 28 January 1978) is an Italian professional footballer who plays as a goalkeeper for Serie B club Parma. He is widely regarded as one of the greatest goalkeepers of all time, and by some as the greatest ever. He is one of the few recorded players to have made over 1,100 professional career appearances. Buffon holds the record for the longest streak without conceding a goal in Serie A history, achieved over twelve league matches; he kept the opposition out for 974 consecutive minutes during the 2015–16 season, achieving the most consecutive clean sheets (10) during that run. Buffon also holds the record for most clean sheets and most appearances in both Serie A and with the Italian national team."
-//     },
-//     yashin: {
-//       name: "Lev Yashin",
-//       position: "Goalkeeper",
-//       nationality: "Russian",
-//       caps: "74",
-//       goals: "0",
-//       bio: ""
-//     }
-//   }
 
-//   $("li").on("click", function() {
-//     const player = players[$(this).data("player")];
-//     $("#bio").html(player.bio);
-//     $("#dialog-message").attr("title",player.name);
-  
-//     $("#dialog-message").dialog({
-//       modal: true,
-//       buttons: {
-//         Ok: function() {
-//           $(this).dialog("close");
-//         }
-//       }
-//     })
-//   })
 
 let players = {
     buffon: {

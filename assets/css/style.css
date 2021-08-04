@@ -131,6 +131,7 @@ body {
 
 .background-image {
     background-color: #000;
+    height: 100%;
 }
 
 .jumbotron.goalkeepers {
@@ -194,6 +195,8 @@ body {
 #bioModalScrollable {
     color:#000;
 }
+
+div#map {min-height: 360px;}
 
 .list-inline-item:not(:last-child) {
     margin: 0;
