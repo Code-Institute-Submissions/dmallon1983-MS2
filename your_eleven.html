@@ -36,32 +36,6 @@
                             </li>
                         </ul>
                     </div>
-
-        <!-- <div class="nav-area">
-            <nav>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html" class="active">Home</a>
-                        </li>
-                        <li>
-                            <a href="legends.html">Legends</a>
-                        </li>
-                        <li>
-                            <a href="your_eleven.html">Your 11</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Be a Legend</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> -->
     </header>
     <section class="container-fluid pitch-image">
         <!-- <div class="col-6 offset-3 eleven-intro">
@@ -72,104 +46,122 @@
             <p>Choose your 11 in the positions below</p>
         </div> -->
         <div class="container pitch">
-            <div class="row gk">
-                <div class="col-4 offset-4 list-inline-block">
-                    <ul>
-                        <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Dropdown button
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <p class="dropdown-item">Gordon Banks</p>
-                                      <p class="dropdown-item">Manuel Neuer</p>
-                                      <p class="dropdown-item">Gianluigi Buffon</p>
-                                      <p class="dropdown-item">Lev Yashin</p>
-                                      <p class="dropdown-item">Iker Casillas</p>
-                                      <p class="dropdown-item">Edwin Van Der Sar</p>
-                                    </div>
-                                  </div>
-                            </div>
-                        </li>
-                    </ul>
+            <form id="myForm">
+                <div class="row gk">
+                    <div class="col-4 offset-4 list-inline-block">
+                        <ul>
+                            <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+                                    <select id="selectGoalKeeper">
+                                        <option>Choose a GK</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+                <div class="row df">
+                    <div class="col-10 offset-1 list-inline-block">
+                        <ul>
+                            <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
 
-            <div class="row gk">
-                <div class="col-10 offset-1 list-inline-block">
-                    <ul>
-                        <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>RB</p>
-                            </div>
-                        </li>
-                        <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>CB</p>
-                            </div>
-                        </li>
-                        <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>CB</p>
-                            </div>
-                        </li>
-                        <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>LB</p>
-                            </div>
-                        </li>
-                    </ul>
+                                    <select class="selectDefender">
+                                        <option>Choose a RB</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+
+                                    <select class="selectDefender">
+                                        <option>Choose a CB</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+
+                                    <select class="selectDefender">
+                                        <option>Choose a CB</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+
+                                    <select class="selectDefender">
+                                        <option>Choose a LB</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="row cm">
-                <div class="col-10 offset-1 list-inline-block">
-                    <ul>
-                        <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>CM</p>
-                            </div>
-                        </li>
-                        <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>CM</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row am">
-                <div class="col-4 offset-4 list-inline-block">
-                    <ul>
-                        <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                alt="male silhouette">
-                            <div class="player-dropdown">
-                                <p>AM</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row wf">
+                <div class="row cm">
                     <div class="col-10 offset-1 list-inline-block">
                         <ul>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
                                 <div class="player-dropdown">
-                                    <p>RF</p>
+
+                                    <select class="selectDefender">
+                                        <option>Choose a MF</option>
+                                    </select>
+
                                 </div>
                             </li>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
                                 <div class="player-dropdown">
-                                    <p>LF</p>
+                                    <select class="selectDefender">
+                                        <option>Choose a MF</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row am">
+                    <div class="col-4 offset-4 list-inline-block">
+                        <ul>
+                            <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+                                    <select class="selectDefender">
+                                        <option>Choose a MF</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row wf">
+                    <div class="col-10 offset-1 list-inline-block">
+                        <ul>
+                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+                                    <select class="selectDefender">
+                                        <option>Choose a FW</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                                    alt="male silhouette">
+                                <div class="player-dropdown">
+                                    <select class="selectDefender">
+                                        <option>Choose a FW</option>
+                                    </select>
                                 </div>
                             </li>
                         </ul>
@@ -181,13 +173,16 @@
                             <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
                                 <div class="player-dropdown">
-                                    <p>CF</p>
+                                    <select class="selectDefender">
+                                        <option>Choose a FW</option>
+                                    </select>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </form>
+        </div>
     </section>
     <section>
         google maps API
@@ -235,6 +230,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="assets/js/your11.js"></script>
 </body>
 
 </html>
