@@ -119,6 +119,211 @@ let players = {
         goals: "0 goals",
         bio: "Neville played as a right-back and spent his entire playing career with Manchester United, making him a one-club man. At the time of his retirement in 2011, he was the second-longest-serving player at the club behind long-time teammate Ryan Giggs, and had served as club captain for five years. He is one of the most decorated English and European footballers of all time, having won a total of 20 trophies, including eight Premier League titles and two Champions League titles."
     },
+    beckenbauer: {
+        name: "Franz Beckenbauer",
+        position: "Central Defender",
+        nationality: "German",
+        caps: "103 caps",
+        goals: "14 goals",
+        bio: "Franz Anton Beckenbauer (born 11 September 1945) is a German former professional footballer and manager. In his playing career he was nicknamed Der Kaiser because of his elegant style, dominance and leadership on the field. He is widely regarded to be one of the greatest players in the history of the sport. A versatile player who started out as a midfielder, Beckenbauer made his name as a central defender. He is often credited as having invented the role of the modern sweeper (libero). Twice named European Footballer of the Year, Beckenbauer appeared 103 times for West Germany and played in three FIFA World Cups and two European Championships. He is one of three men, along with Brazil's Mário Zagallo and France's Didier Deschamps, to have won the World Cup as a player and as a manager."
+    },
+    baresi: {
+        name: "Franco Baresi",
+        position: "Central Defender",
+        nationality: "Italian",
+        caps: "81 caps",
+        goals: "1 goals",
+        bio: "Franchino Baresi (born 8 May 1960) is an Italian football youth team coach and a former player and manager. He mainly played as a sweeper or as a central defender, and spent his entire 20-year career with Serie A club AC Milan, captaining the club for 15 seasons. He is considered one of the greatest defenders of all-time and was ranked 19th in World Soccer magazine's list of the 100 greatest players of the 20th century. With Milan, he won three UEFA Champions League titles, six Serie A titles, four Supercoppa Italiana titles, two European Super Cups and two Intercontinental Cups."
+    },
+    maldini: {
+        name: "Paolo Maldini",
+        position: "Central Defender",
+        nationality: "Italian",
+        caps: "126 caps",
+        goals: "7 goals",
+        bio: "Paolo Cesare Maldini (born 26 June 1968) is an Italian former professional footballer who played primarily as a left back and central defender for AC Milan and the Italy national team. He is widely regarded as one of the greatest ever defenders, with some considering him to be the best ever, and as one of the greatest players of all time. As the Milan and Italy captain for many years he was nicknamed 'Il Capitano'. Maldini held the record for most appearances in Serie A, with 647, until 2020, when he was overtaken by Gianluigi Buffon"
+    },
+    ferdinand: {
+        name: "Rio Ferdinand",
+        position: "Central Defender",
+        nationality: "English",
+        caps: "81 caps",
+        goals: "3 goals",
+        bio: "Rio Gavin Ferdinand (born 7 November 1978) is an English former professional footballer who played as a centre-back. He played 81 times for the England national team between 1997 and 2011, and was a member of three FIFA World Cup squads. He is one of the most decorated English footballers of all time and regarded by many as one of England's greatest ever players."
+    },
+    vidic: {
+        name: "Nemanja Vidic",
+        position: "Central Defender",
+        nationality: "Serbian",
+        caps: "53 caps",
+        goals: "2 goals",
+        bio: "Nemanja Vidić (born 21 October 1981) is a Serbian former professional footballer who played as a centre-back. He most notably played for Manchester United, and was part of the Serbia national team. He was widely considered to be the world's best centre-back in his prime due to his defensive consistency and awareness, as well as his strength, leadership, and ability in the air, and is now considered one of the finest of his generation. He is one of only three players to win the Premier League Player of the Season award twice, alongside Thierry Henry and Cristiano Ronaldo."
+    },
+    terry: {
+        name: "John Terry",
+        position: "Central Defender",
+        nationality: "English",
+        caps: "78 caps",
+        goals: "6 goals",
+        bio: "John George Terry (born 7 December 1980) is an English professional football coach and former player who played as a centre-back. He was previously captain of Chelsea, the England national team and Aston Villa. Regarded as one of the best defenders in the world at his peak, he is considered to be one of the greatest central defenders of his generation, as well as one of the best English and Premier League defenders ever."
+    },
+    mcneill: {
+        name: "Billy McNeill",
+        position: "Central Defender",
+        nationality: "Scottish",
+        caps: "29 caps",
+        goals: "3 goals",
+        bio: "A defender, McNeill (2 March 1940 – 22 April 2019) played for Celtic for his entire senior career, and holds the club record for most appearances, a total of 822 games over 18 seasons. He was captain during their most successful era in the 1960s and 70s. The club won nine consecutive Scottish league championships and thirteen other major domestic trophies in this time, and in 1967 became the first British club to win the European Cup. He also played 29 times for Scotland."
+    },
+    vvd: {
+        name: "Virgil Van Dijk",
+        position: "Central Defender",
+        nationality: "Dutch",
+        caps: "38 caps",
+        goals: "4 goals",
+        bio: "Virgil van Dĳk (born 8 July 1991) is a Dutch professional footballer who plays as a centre-back for Premier League club Liverpool and captains the Netherlands national team. Considered one of the best defenders in the world, Van Dijk is known for his strength, leadership and aerial ability. He is the only defender to win UEFA Men's Player of the Year, and has finished runner-up for the Ballon d'Or and Best FIFA Men's Player."
+    },
+    cannavaro: {
+        name: "Fabio Cannavaro",
+        position: "Central Defender",
+        nationality: "Italian",
+        caps: "136 caps",
+        goals: "2 goals",
+        bio: "Fabio Cannavaro Ufficiale OMRI (born 13 September 1973) is an Italian former professional footballer. A centre-back, he spent the majority of his career in Italy. He started his career at Napoli before spending seven years at Parma, with whom he won two Coppa Italia titles, the 1999 Supercoppa Italiana, and the 1999 UEFA Cup. After spells at Internazionale and Juventus, he transferred from Juventus to Real Madrid in 2006, with whom he won consecutive La Liga titles in 2007 and 2008."
+    },
+    xavi: {
+        name: "Xavi",
+        position: "Central Midfielder",
+        nationality: "Spanish",
+        caps: "133 caps",
+        goals: "13 goals",
+        bio: "Xavier Hernández Creus (born 25 January 1980), known as Xavi, is a former Spanish professional football player. Widely considered one of the best midfielders of all time, Xavi is renowned for his passing, vision, ball retention, and positioning. Xavi was awarded the IFFHS World's Best Playmaker award four times, all straight between 2008 and 2011. He was included in the FIFA FIFPro World XI on six occasions: 2008 to 2013, and the UEFA Team of the Year five times: 2008 to 2012. In 2020 Xavi was named in the Ballon d'Or Dream Team, a greatest all-time XI published by France Football magazine. Xavi was awarded the Prince of Asturias Award in 2012, and he won 32 trophies in his career, making him the second-most decorated Spanish player in history, behind former teammate Andrés Iniesta"
+    },
+    iniesta: {
+        name: "Andres Iniesta",
+        position: "Attacking Midfielder",
+        nationality: "Spanish",
+        caps: "131 caps",
+        goals: "13 goals",
+        bio: "Andrés Iniesta Luján (born 11 May 1984) is a Spanish professional footballer who plays as a central midfielder and is the captain of J1 League club Vissel Kobe. Often considered one of the best midfielders of all time, Iniesta spent most of his career at Barcelona, where he served as the captain for three seasons. Iniesta has been named in the FIFA FIFPro World XI nine times and was chosen in the UEFA Team of the Year on six occasions. He was named in the All-time UEFA Euro XI. He won the UEFA Best Player in Europe Award in 2012 and was named the IFFHS World's Best Playmaker in 2012 and 2013. Iniesta was runner-up to Lionel Messi for the 2010 FIFA Ballon d'Or and achieved third place in 2012."
+    },
+    keane: {
+        name: "Roy Keane",
+        position: "Central Midfielder",
+        nationality: "Irish",
+        caps: "67 caps",
+        goals: "9 goals",
+        bio: "Roy Maurice Keane (born 10 August 1971) is an Irish former professional player. He is the joint most successful Irish footballer of all time, having won 19 major trophies in his club career, 17 of which came during his time at English club Manchester United. Regarded as one of the best midfielders of his generation, he was named by Pelé in the FIFA 100 list of the world's greatest living players in 2004. Noted for his hardened and brash demeanour, he was ranked at No. 11 on The Times' list of the 50 'hardest' footballers in history in 2007. Keane was inducted into the Premier League Hall of Fame in 2021."
+    },
+    zidane: {
+        name: "Zinedine Zidane",
+        position: "Attacking Midfielder",
+        nationality: "French",
+        caps: "108 caps",
+        goals: "31 goals",
+        bio: "Zinedine Yazid Zidane (born 23 June 1972), popularly known as Zizou, is a French former professional football player who played as an attacking midfielder. Also widely regarded as one of the greatest players of all time, Zidane was an elite playmaker renowned for his elegance, vision, passing, ball control, and technique. He received many individual accolades as a player, including being named FIFA World Player of the Year in 1998, 2000 and 2003, and winning the 1998 Ballon d'Or."
+    },
+    scholes: {
+        name: "Paul Scholes",
+        position: "Central Midfielder",
+        nationality: "English",
+        caps: "66 caps",
+        goals: "14 goals",
+        bio: "Paul Scholes (born 16 November 1974) is an English football former player. He spent his entire professional playing career with Manchester United, for whom he scored over 150 goals in more than 700 appearances between 1993 and 2013. He is widely regarded as one of the best midfielders of his generation and one of the greatest Manchester United players of all time."
+    },
+    viera: {
+        name: "Patrick Viera",
+        position: "Central Midfielder",
+        nationality: "French",
+        caps: "107 caps",
+        goals: "6 goals",
+        bio: "Patrick Vieira (born 23 June 1976) is a French  former player who is the manager of Premier League club Crystal Palace.  During his nine-year stint in the Premier League, Vieira established himself as a dominating box-to-box midfielder, noted for his aggressive and highly competitive style of play, an attitude that also helped him excel as captain of the club from 2002 until his departure in 2005. He was named in the Premier League PFA Team of the Year for six consecutive years from 1999 to 2004. He helped Arsenal achieve a sustained period of success during his time at the club, where he lifted four FA Cups and three league titles, including one unbeaten."
+    },
+    pirlo: {
+        name: "Andrea Pirlo",
+        position: "Central Midfielder",
+        nationality: "Italian",
+        caps: "116 caps",
+        goals: "13 goals",
+        bio: "Andrea Pirlo Ufficiale OMRI (born 19 May 1979) is an Italian professional former player who was most recently the head coach of Serie A club Juventus. Considered one of the greatest deep-lying playmakers ever, Pirlo was renowned for his vision, ball control, technique, creativity, passing, and free kick ability."
+    },
+    makalele: {
+        name: "Claude Makalele",
+        position: "Central Midfielder",
+        nationality: "French",
+        caps: "71 caps",
+        goals: "0 goals",
+        bio: "Regarded as one of the greatest players in his position, Makélélé has been credited with redefining the defensive midfield role in English football, especially during the 2004–05 FA Premier League season, where he played a key role in helping Chelsea win the title with 95 points. In homage, the defensive midfield position is sometimes colloquially known as the 'Makelele Role'."
+    },
+    souness: {
+        name: "Graeme Souness",
+        position: "Central Midfielder",
+        nationality: "Scottish",
+        caps: "54 caps",
+        goals: "4 goals",
+        bio: "Graeme James Souness (born 6 May 1953) is a Scottish former professional football player, manager, and current pundit on Sky Sports. A midfielder, Souness was the captain of the successful Liverpool team of the early 1980s, player-manager of Rangers in the late 1980s and captain of the Scotland national team. He also played for Tottenham Hotspur, Middlesbrough and Sampdoria."
+    },
+    charlton: {
+        name: "Bobby Charlton",
+        position: "Attacking Midfielder",
+        nationality: "English",
+        caps: "106 caps",
+        goals: "49 goals",
+        bio: "Sir Robert Charlton CBE (born 11 October 1937) is an English former footballer who played as a midfielder. Considered one of the best players of all time,[2] he was a member of the England team that won the 1966 FIFA World Cup, the year he also won the Ballon d'Or. He played almost all of his club football at Manchester United, where he became renowned for his attacking instincts, his passing abilities from midfield and his ferocious long-range shot, as well as his fitness and stamina."
+    },
+    maradona: {
+        name: "Diego Maradona",
+        position: "Forward",
+        nationality: "Argentinian",
+        caps: "91 caps",
+        goals: "34 goals",
+        bio: "Diego Armando Maradona (30 October 1960 – 25 November 2020) was an Argentine professional football player and manager. Widely regarded as one of the greatest players in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th Century award. Maradona's vision, passing, ball control, and dribbling skills were combined with his small stature, which gave him a low centre of gravity allowing him to manoeuvre better than most other players."
+    },
+    pele: {
+        name: "Pele",
+        position: "Forward",
+        nationality: "Brazilian",
+        caps: "92 caps",
+        goals: "77 goals",
+        bio: "Edson Arantes do Nascimento (born 23 October 1940), known as Pelé, is a Brazilian former professional footballer who played as a forward. Regarded as one of the greatest players of all time and labelled 'the greatest' by FIFA, he was among the most successful and popular sports figures of the 20th century. In 1999 he was named Athlete of the Century by the International Olympic Committee and was included in the Time list of the 100 most important people of the 20th century. In 2000, Pelé was voted World Player of the Century by the International Federation of Football History & Statistics (IFFHS), and was one of the two joint winners of the FIFA Player of the Century. His total of 1,279 goals in 1,363 games, which included friendlies, is recognised as a Guinness World Record."
+    },
+    ronaldo: {
+        name: "Ronaldo",
+        position: "Forward",
+        nationality: "Brazilian",
+        caps: "98 caps",
+        goals: "62 goals",
+        bio: "Ronaldo Luís Nazário de Lima (born 18 September 1976),[2] commonly known as Ronaldo, is a Brazilian retired professional footballer who played as a striker. Popularly dubbed O Fenômeno ('The Phenomenon'), and also nicknamed R9, he is widely considered one of the greatest players of all time. As a multi-functional striker who brought a new dimension to the position, Ronaldo has been the influence for a generation of strikers that have followed. His individual accolades include being named FIFA World Player of the Year three times, and winning two Ballon d'Or awards. Ronaldo started his career at Cruzeiro and moved to PSV in 1994. He joined Barcelona in 1996 for a then world record transfer fee, and at 20 years old he was named the 1996 FIFA World Player of the Year, making him the youngest recipient of the award. In 1997, Inter Milan broke the world record fee to sign Ronaldo, making him the first player since Diego Maradona to break the world transfer record twice. At 21 he received the 1997 Ballon d'Or, and he remains the youngest recipient of the award. By the age of 23, Ronaldo had scored over 200 goals for club and country."
+    },
+    cristiano: {
+        name: "Cristiano Ronaldo",
+        position: "Forward",
+        nationality: "Portuguese",
+        caps: "179 caps",
+        goals: "109 goals",
+        bio: "Cristiano Ronaldo dos Santos Aveiro GOIH ComM (born 5 February 1985) is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards and four European Golden Shoes, the most by a European player. He has won 32 major trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship, and one UEFA Nations League. Ronaldo holds the records for most goals (134) and assists (42) in the Champions League, most goals in the European Championship (14), and is currently tied with Ali Daei for most international goals (109). He is one of the few recorded players to have made over 1,100 professional career appearances, and has scored over 780 official senior career goals for club and country."
+    },
+    messi: {
+        name: "Lionel Messi",
+        position: "Forward",
+        nationality: "Argentinian",
+        caps: "151 caps",
+        goals: "76 goals",
+        bio: "Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He has scored over 750 senior career goals for club and country, and has the most goals ever by a player for a single club."
+    },
+    messi: {
+        name: "Lionel Messi",
+        position: "Forward",
+        nationality: "Argentinian",
+        caps: "151 caps",
+        goals: "76 goals",
+        bio: "Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He has scored over 750 senior career goals for club and country, and has the most goals ever by a player for a single club."
+    },
+
+
+    
+
+
 
 
 }
