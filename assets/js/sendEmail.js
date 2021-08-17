@@ -7,10 +7,10 @@ function sendMail(contactForm) {
         })
         .then(
             function (response) {
-                console.log("SUCCESS", response);
+                console.log("SUCCESS", response); //change to alert
             },
             function (error) {
-                console.log("FAILED", error);
+                console.log("FAILED", error);   //change to alert
             }
         );
     return false;

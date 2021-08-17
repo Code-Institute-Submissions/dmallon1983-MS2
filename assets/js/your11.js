@@ -1,23 +1,25 @@
-let goalkeepers = ["Lev Yashin", "Gordon Banks", "Gianluigi Buffon", "Manuel Neuer", "Iker Casillas", "Edwin Van Der Sar"];
-
-let defenders = ["Cafu", "Roberto Carlos", "Ashley Cole", "Gary Neville", "Danny McGrain", "Philip Lahm", "Javier Zanetti", "Dani Alves", "Carlos Alberto", "Franz Beckenbeaur", "Franco Baresi", "Paolo Maldini", "Rio Ferdinand", "Nemanja Vidic", "John Terry", "Billy McNeill", "Virgil Van Dijk", "Fabio Cannavaro"];
-
+/*
 let midfielders = ["Xavi", "Andres Iniesta", "Roy Keane", "Zinedine Zidane", "Paul Scholes", "Patrick Viera", "Andrea Pirlo", "Claude Makalele", "Bobby Charlton", "Graeme Souness"];
 
 let forwards = ["Diego Maradona", "Pele", "Ronaldo", "Cristiano Ronaldo", "Lionel Messi", "Thierry Henry", "Ferenc Puskas", "Ronaldinho", "Robert Lewandowski", "Henrik Larsson"];
+*/
 
 var dropdown = document.getElementById("selectGoalKeeper");
+
+let goalkeepers = ["Lev Yashin", "Gordon Banks", "Gianluigi Buffon", "Manuel Neuer", "Iker Casillas", "Edwin Van Der Sar"];
 
 for (var i = 0; i < goalkeepers.length; i++) {
     
     dropdown[dropdown.length] = new Option(goalkeepers[i], goalkeepers[i]);
 }
 
-let dropdown = document.getElementsByClassName("selectDefender");
+let dropdownDF = document.getElementsByClassName("selectDefenders")[0];
+
+let defenders = ["Cafu", "Roberto Carlos", "Ashley Cole", "Gary Neville", "Danny McGrain", "Philip Lahm", "Javier Zanetti", "Dani Alves", "Carlos Alberto", "Franz Beckenbeaur", "Franco Baresi", "Paolo Maldini", "Rio Ferdinand", "Nemanja Vidic", "John Terry", "Billy McNeill", "Virgil Van Dijk", "Fabio Cannavaro"];
 
 for (let i = 0; i < defenders.length; i++) {
     
-    dropdown[dropdown.length] = new Option(defenders[i], defenders[i]);
+    dropdownDF[dropdownDF.length] = new Option(defenders[i], defenders[i]);
 }
 
 
