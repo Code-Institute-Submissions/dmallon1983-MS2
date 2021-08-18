@@ -311,21 +311,46 @@ let players = {
         goals: "76 goals",
         bio: "Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He has scored over 750 senior career goals for club and country, and has the most goals ever by a player for a single club."
     },
-    messi: {
-        name: "Lionel Messi",
+    puskas: {
+        name: "Ferenc Puskas",
         position: "Forward",
-        nationality: "Argentinian",
+        nationality: "Hungarian",
+        caps: "85 caps",
+        goals: "84 goals",
+        bio: "Ferenc Puskás (born Ferenc Purczeld 1 April 1927 – 17 November 2006) was a Hungarian football player and manager, widely regarded as one of the greatest players in history and the sport's first international superstar. A forward, he scored 84 goals in 85 international matches for Hungary, played four international matches for Spain and scored 514 goals in 529 matches in the Hungarian and Spanish leagues. He became an Olympic champion in 1952 and led his nation to the final of the 1954 World Cup. He won three European Cups (1959, 1960, 1966), 10 national championships (five Hungarian and five Spanish Primera División) and eight top individual scoring honors. In 1995, he was recognized as the greatest top division scorer of the 20th century by the IFFHS. With 806 goals in 793 official games scored during his career, he is the fourth top goalscorer of all time."
+    },
+    henry: {
+        name: "Thierry Henry",
+        position: "Forward",
+        nationality: "French",
+        caps: "123 caps",
+        goals: "51 goals",
+        bio: "Thierry Daniel Henry (born 17 August 1977) is a French professional football coach and former player who is an assistant coach for Belgium. He is considered one of the greatest strikers of all time and one of the greatest players in the history of the Premier League. In 2003 and 2004, Henry was the runner-up for the FIFA World Player of the Year, and was runner-up for the Ballon d'Or in the former year. He was named the PFA Players' Player of the Year twice, the FWA Footballer of the Year three times, and was named in the PFA Team of the Year six consecutive times. He was also included in the FIFA FIFPro World XI once and the UEFA Team of the Year five times. He was one of the most commercially marketed footballers during the 2000s. Henry was one of the first two players inducted into the Premier League Hall of Fame in 2021."
+    },
+    larsson: {
+        name: "Henrik Larsson",
+        position: "Forward",
+        nationality: "Swedish",
         caps: "151 caps",
         goals: "76 goals",
-        bio: "Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He has scored over 750 senior career goals for club and country, and has the most goals ever by a player for a single club."
+        bio: "Edward Henrik Larsson (born 20 September 1971) is a Swedish professional football coach and former player, who currently serves as an assistant manager of Barcelona. Regarded as one of the greatest Swedish players of all time, Larsson played for Sweden in three FIFA World Cups and three UEFA European Championships, winning a bronze medal at the 1994 World Cup, and is a former captain of the national team. He ended his international career with 37 goals in 106 matches. He also won the Golden Ball (Guldbollen), the annual Award for best Swedish footballer twice, first in 1998 and again in 2004, while in 2003 he was named the Greatest Swedish Footballer of the Last 50 Years as part of the UEFA Jubilee Awards. He is also the all-time leading goalscorer in the UEFA Europa League/UEFA Cup. Wim Jansen signed Larsson for Scottish club Celtic in July 1997 for a fee of £650,000. In his first season at the club, he played a crucial role in Celtic winning their first league title in ten years. He suffered a broken leg in a UEFA Cup tie against Lyon in 1999. Larsson came back stronger, scoring 53 goals in a 2000–01 season that saw him win the European Golden Shoe. Larsson won four league titles in his seven years at Celtic. He also helped the team reach the 2003 UEFA Cup Final against Porto, scoring both goals in a 3–2 defeat in extra time. His 242 goals in 315 matches saw Celtic fans nickname him The King of Kings."
     },
-
-
-    
-
-
-
-
+    lewa: {
+        name: "Robert Lewandowski",
+        position: "Forward",
+        nationality: "Polish",
+        caps: "122 caps",
+        goals: "69 goals",
+        bio: "Robert Lewandowski (born 21 August 1988) is a Polish professional footballer who plays as a striker for Bundesliga club Bayern Munich and is the captain of the Poland national team. Recognized for his positioning, technique and finishing, Lewandowski is considered one of the best strikers of all time, as well as one of the most successful players in Bundesliga history. He has scored over 500 senior career goals for club and country."
+    },
+    ronaldinho: {
+        name: "Ronaldinho",
+        position: "Forward",
+        nationality: "Brazilian",
+        caps: "97 caps",
+        goals: "33 goals",
+        bio: "Ronaldo de Assis Moreira (born 21 March 1980), commonly known as Ronaldinho Gaúcho or simply Ronaldinho, is a Brazilian retired professional footballer and current ambassador for Barcelona. He played mostly as an attacking midfielder, but was also deployed as a winger. Considered one of the best players of his generation and regarded by many as one of the greatest of all time, Ronaldinho won two FIFA World Player of the Year awards and a Ballon d'Or. A global icon of the sport, he was renowned for his technical skills, creativity and dribbling ability, as well as his use of tricks, feints, no-look passes and overhead kicks."
+    },
 }
 
 
