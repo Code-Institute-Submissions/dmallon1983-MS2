@@ -13,7 +13,7 @@ for (var i = 0; i < goalkeepers.length; i++) {
     dropdown[dropdown.length] = new Option(goalkeepers[i], goalkeepers[i]);
 }
 
-let dropdownDF = document.getElementsByClassName("selectDefenders")[0];
+let dropdownDF = document.getElementsByClassName("selectDefenders");
 
 let defenders = ["Cafu", "Roberto Carlos", "Ashley Cole", "Gary Neville", "Danny McGrain", "Philip Lahm", "Javier Zanetti", "Dani Alves", "Carlos Alberto", "Franz Beckenbeaur", "Franco Baresi", "Paolo Maldini", "Rio Ferdinand", "Nemanja Vidic", "John Terry", "Billy McNeill", "Virgil Van Dijk", "Fabio Cannavaro"];
 
@@ -62,3 +62,4 @@ function handleSubmit(event) {
         console.log('legends'); //need feedback. change to alert
     }
 }
+
