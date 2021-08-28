@@ -384,46 +384,418 @@ $("li").on("click", function () {
 //         icon: image,
 //     });
 // }
-function initMap() {
-    const uluru = { lat: -25.363, lng: 131.044 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
-    });
-    const contentString =
-      '<div id="content">' +
-      '<div id="siteNotice">' +
-      "</div>" +
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-      '<div id="bodyContent">' +
-      "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-      "sandstone rock formation in the southern part of the " +
-      "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-      "south west of the nearest large town, Alice Springs; 450&#160;km " +
-      "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-      "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-      "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-      "Aboriginal people of the area. It has many springs, waterholes, " +
-      "rock caves and ancient paintings. Uluru is listed as a World " +
-      "Heritage Site.</p>" +
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-      "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-      "(last visited June 22, 2009).</p>" +
-      "</div>" +
-      "</div>";
-    const infowindow = new google.maps.InfoWindow({
-      content: contentString,
-    });
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map,
-      title: "Uluru (Ayers Rock)",
-    });
-    marker.addListener("click", () => {
-      infowindow.open({
-        anchor: marker,
-        map,
-        shouldFocus: false,
-      });
-    });
-  }
+
+// function initMap() {
+//     const yashin = { lat: 55.7558, lng: 37.6173 };
+//     const map = new google.maps.Map(document.getElementById("map"), {
+//       zoom: 4,
+//       center: uluru,
+//     });
+//     const contentString =
+//       '<div id="content">' +
+//       '<div id="siteNotice">' +
+//       "</div>" +
+//       '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+//       '<div id="bodyContent">' +
+//       "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+//       "sandstone rock formation in the southern part of the " +
+//       "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+//       "south west of the nearest large town, Alice Springs; 450&#160;km " +
+//       "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+//       "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+//       "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+//       "Aboriginal people of the area. It has many springs, waterholes, " +
+//       "rock caves and ancient paintings. Uluru is listed as a World " +
+//       "Heritage Site.</p>" +
+//       '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+//       "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+//       "(last visited June 22, 2009).</p>" +
+//       "</div>" +
+//       "</div>";
+//     const infowindow = new google.maps.InfoWindow({
+//       content: contentString,
+//     });
+//     const marker = new google.maps.Marker({
+//       position: uluru,
+//       map,
+//       title: "Uluru (Ayers Rock)",
+//     });
+//     marker.addListener("click", () => {
+//       infowindow.open({
+//         anchor: marker,
+//         map,
+//         shouldFocus: false,
+//       });
+//     });
+//   }
+
+  var map;
+            var InforObj = [];
+            var centerCords = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            var markersOnMap = [{
+                    placeName: "Lev Yashin (Moscow, Russia)",
+                    LatLng: [{
+                        lat: 55.7558,
+                        lng: 37.6173
+                    }]
+                },
+                {
+                    placeName: "Gianluigi Buffon (Carrara, Italy)",
+                    LatLng: [{
+                        lat: 44.0793,
+                        lng: 10.0977
+                    }]
+                },
+                {
+                    placeName: "Edwin Van Der Sar (Voorhout, Netherlands)",
+                    LatLng: [{
+                        lat: 52.2223,
+                        lng: 4.4863
+                    }]
+                },
+                {
+                    placeName: "Iker Casillas (Madrid, Spain)",
+                    LatLng: [{
+                        lat: 40.4168,
+                        lng: 3.7038
+                    }]
+                },
+                {
+                    placeName: "Manuel Neuer (Gelsenkirchen, Germany)",
+                    LatLng: [{
+                        lat: 51.5177,
+                        lng: 7.0857
+                    }]
+                },
+                {
+                    placeName: "Gordon Banks (Sheffield, England)",
+                    LatLng: [{
+                        lat: 53.3811,
+                        lng: 1.4701
+                    }]
+                },
+                {
+                    placeName: "Cafu (Sao Paulo, Brazil)",
+                    LatLng: [{
+                        lat: 23.5558,
+                        lng: 46.6396
+                    }]
+                },
+                {
+                    placeName: "Roberto Carlos (Sao Paulo, Brazil)",
+                    LatLng: [{
+                        lat: 22.2132,
+                        lng: 49.6555
+                    }]
+                },
+                {
+                    placeName: "Ashley Cole (Stepney, England)",
+                    LatLng: [{
+                        lat: 51.5222,
+                        lng: 0.0492
+                    }]
+                },
+                {
+                    placeName: "Gary Neville (Bury, England)",
+                    LatLng: [{
+                        lat: 53.5933,
+                        lng: 2.2966
+                    }]
+                },
+                {
+                    placeName: "Danny McGrain (Finnieston, Scotland)",
+                    LatLng: [{
+                        lat: 55.8636,
+                        lng: 4.2825
+                    }]
+                },
+                {
+                    placeName: "Philipp Lahm (Munich, Germany)",
+                    LatLng: [{
+                        lat: 48.1351,
+                        lng: 11.5820
+                    }]
+                },
+                {
+                    placeName: "Javier Zanetti (Buenes Aires, Argentina)",
+                    LatLng: [{
+                        lat: 48.1351,
+                        lng: 11.5820
+                    }]
+                },
+                {
+                    placeName: "Dani Alves (Juazeiro, Brazil)",
+                    LatLng: [{
+                        lat: 9.4313,
+                        lng: 40.5080
+                    }]
+                },
+                {
+                    placeName: "Carlos Alberto (Rio de Janeiro)",
+                    LatLng: [{
+                        lat: 22.9068,
+                        lng: 43.1729
+                    }]
+                },
+                {
+                    placeName: "Franz Beckenbauer (Munich, Germany)",
+                    LatLng: [{
+                        lat: 48.1351,
+                        lng: 11.5820
+                    }]
+                },
+                {
+                    placeName: "Franco Baresi (Travagliato, Italy)",
+                    LatLng: [{
+                        lat: 45.5233,
+                        lng: 10.0833
+                    }]
+                },
+                {
+                    placeName: "Paolo Maldini (Milan, Italy)",
+                    LatLng: [{
+                        lat: 45.4642,
+                        lng: 9.1900
+                    }]
+                },
+                {
+                    placeName: "Rio Ferdinand (Camberwell, England)",
+                    LatLng: [{
+                        lat: 51.4741,
+                        lng: 0.0930
+                    }]
+                },
+                {
+                    placeName: "Nemanja Vidic (Titovo Užice, SFR Yugoslavia)",
+                    LatLng: [{
+                        lat: 43.8556,
+                        lng: 19.8425
+                    }]
+                },
+                {
+                    placeName: "John Terry (Barking, England)",
+                    LatLng: [{
+                        lat: 51.5366,
+                        lng: 0.0758
+                    }]
+                },
+                {
+                    placeName: "Billy McNeill (Glasgow, Scotland)",
+                    LatLng: [{
+                        lat: 55.8195,
+                        lng: 4.0077
+                    }]
+                },
+                {
+                    placeName: "Virgil Van Dijk (Breda, Netherlands)",
+                    LatLng: [{
+                        lat: 51.5719,
+                        lng: 4.7683
+                    }]
+                },
+                {
+                    placeName: "Fabio Cannavaro (Naples, Italy)",
+                    LatLng: [{
+                        lat: 40.8518,
+                        lng: 14.2681
+                    }]
+                },
+                {
+                    placeName: "Xavi (Terrassa, Spain)",
+                    LatLng: [{
+                        lat: 41.5632,
+                        lng: 2.0089
+                    }]
+                },
+                {
+                    placeName: "Andres Iniesta (Fuentealbilla, Spain)",
+                    LatLng: [{
+                        lat: 39.2675,
+                        lng: 1.5511
+                    }]
+                },
+                {
+                    placeName: "Roy Keane (Cork, Ireland)",
+                    LatLng: [{
+                        lat: 51.8985,
+                        lng: 8.4756
+                    }]
+                },
+                {
+                    placeName: "Zinedine Zidane (Marseilles, France)",
+                    LatLng: [{
+                        lat: 43.2965,
+                        lng: 5.3698
+                    }]
+                },
+                {
+                    placeName: "Paul Scholes (Salford, England)",
+                    LatLng: [{
+                        lat: 53.4875,
+                        lng: 2.2901
+                    }]
+                },
+                {
+                    placeName: "Patrick Viera (Dakar, Senegal)",
+                    LatLng: [{
+                        lat: 14.7167,
+                        lng: 17.4677
+                    }]
+                },
+                {
+                    placeName: "Andrea Pirlo (Flero, Italy)",
+                    LatLng: [{
+                        lat: 44.1194,
+                        lng: 9.7166
+                    }]
+                },
+                {
+                    placeName: "Claude Makalele (Kinshasa, Zaire)",
+                    LatLng: [{
+                        lat: 4.4419,
+                        lng: 15.2663
+                    }]
+                },
+                {
+                    placeName: "Graeme Souness (Edinburgh, Scotland)",
+                    LatLng: [{
+                        lat: 55.9533,
+                        lng: 3.1883
+                    }]
+                },
+                {
+                    placeName: "Bobby Charlton (Ashington, England)",
+                    LatLng: [{
+                        lat: 55.1830,
+                        lng: 1.5660
+                    }]
+                },
+                {
+                    placeName: "Diego Maradona (Lanús, Argentina)",
+                    LatLng: [{
+                        lat: 34.7016,
+                        lng: 58.4014
+                    }]
+                },
+                {
+                    placeName: "Pele (Três Corações, Brazil)",
+                    LatLng: [{
+                        lat: 21.6973,
+                        lng: 45.2563
+                    }]
+                },
+                {
+                    placeName: "Ronaldo (Rio de Janeiro)",
+                    LatLng: [{
+                        lat: 22.8068,
+                        lng: 43.1729
+                    }]
+                },
+                {
+                    placeName: "Cristiano Ronaldo (Madeira, Portugal)",
+                    LatLng: [{
+                        lat: 32.7607,
+                        lng: 16.9595
+                    }]
+                },
+                {
+                    placeName: "Lionel Messi (Rosario, Santa Fe, Argentina)",
+                    LatLng: [{
+                        lat: 32.9587,
+                        lng: 60.6930
+                    }]
+                },
+                {
+                    placeName: "Ferenc Puskas (Budapest, Hungary)",
+                    LatLng: [{
+                        lat: 47.4979,
+                        lng: 19.0402
+                    }]
+                },
+                {
+                    placeName: "Robert Lewandowski (Warsaw, Poland)",
+                    LatLng: [{
+                        lat: 52.2297,
+                        lng: 21.0122
+                    }]
+                },
+                {
+                    placeName: "Thierry Henry (Les Ulis, France)",
+                    LatLng: [{
+                        lat: 48.6793,
+                        lng: 2.1665
+                    }]
+                },
+                {
+                    placeName: "Henrik Larsson (Helsingborg, Sweden)",
+                    LatLng: [{
+                        lat: 56.0465,
+                        lng: 12.6945
+                    }]
+                },
+                {
+                    placeName: "Ronaldinho (Porto Alegre, Brazil)",
+                    LatLng: [{
+                        lat: 30.0368,
+                        lng: 51.2090
+                    }]
+                }
+            
+
+            ];
+
+            window.onload = function () {
+                initMap();
+            };
+
+            function addMarkerInfo() {
+                for (var i = 0; i < markersOnMap.length; i++) {
+                    var contentString = '<div id="content"><h1>' + markersOnMap[i].placeName +
+                        '</h1><p>Lorem ipsum dolor sit amet, vix mutat posse suscipit id, vel ea tantas omittam detraxit.</p></div>';
+
+                    const marker = new google.maps.Marker({
+                        position: markersOnMap[i].LatLng[0],
+                        map: map
+                    });
+
+                    const infowindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: 200
+                    });
+
+                    marker.addListener('click', function () {
+                        closeOtherInfo();
+                        infowindow.open(marker.get('map'), marker);
+                        InforObj[0] = infowindow;
+                    });
+                    // marker.addListener('mouseover', function () {
+                    //     closeOtherInfo();
+                    //     infowindow.open(marker.get('map'), marker);
+                    //     InforObj[0] = infowindow;
+                    // });
+                    // marker.addListener('mouseout', function () {
+                    //     closeOtherInfo();
+                    //     infowindow.close();
+                    //     InforObj[0] = infowindow;
+                    // });
+                }
+            }
+
+            function closeOtherInfo() {
+                if (InforObj.length > 0) {
+                    InforObj[0].set("marker", null);
+                    InforObj[0].close();
+                    InforObj.length = 0;
+                }
+            }
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: centerCords
+                });
+                addMarkerInfo();
+            }
