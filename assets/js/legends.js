@@ -460,7 +460,7 @@ $("li").on("click", function () {
                     placeName: "Iker Casillas (Madrid, Spain)",
                     LatLng: [{
                         lat: 40.4168,
-                        lng: 3.7038
+                        lng: -3.7038
                     }]
                 },
                 {
@@ -474,21 +474,21 @@ $("li").on("click", function () {
                     placeName: "Gordon Banks (Sheffield, England)",
                     LatLng: [{
                         lat: 53.3811,
-                        lng: 1.4701
+                        lng: -1.4701
                     }]
                 },
                 {
                     placeName: "Cafu (Sao Paulo, Brazil)",
                     LatLng: [{
-                        lat: 23.5558,
-                        lng: 46.6396
+                        lat: -23.5558,
+                        lng: -46.6396
                     }]
                 },
                 {
                     placeName: "Roberto Carlos (Sao Paulo, Brazil)",
                     LatLng: [{
-                        lat: 22.2132,
-                        lng: 49.6555
+                        lat: -22.2132,
+                        lng: -49.6555
                     }]
                 },
                 {
@@ -502,14 +502,14 @@ $("li").on("click", function () {
                     placeName: "Gary Neville (Bury, England)",
                     LatLng: [{
                         lat: 53.5933,
-                        lng: 2.2966
+                        lng: -2.2966
                     }]
                 },
                 {
                     placeName: "Danny McGrain (Finnieston, Scotland)",
                     LatLng: [{
                         lat: 55.8636,
-                        lng: 4.2825
+                        lng: -4.2825
                     }]
                 },
                 {
@@ -522,22 +522,22 @@ $("li").on("click", function () {
                 {
                     placeName: "Javier Zanetti (Buenes Aires, Argentina)",
                     LatLng: [{
-                        lat: 48.1351,
-                        lng: 11.5820
+                        lat: -34.6037,
+                        lng: -58.3816
                     }]
                 },
                 {
                     placeName: "Dani Alves (Juazeiro, Brazil)",
                     LatLng: [{
-                        lat: 9.4313,
-                        lng: 40.5080
+                        lat: -9.4313,
+                        lng: -40.5080
                     }]
                 },
                 {
                     placeName: "Carlos Alberto (Rio de Janeiro)",
                     LatLng: [{
-                        lat: 22.9068,
-                        lng: 43.1729
+                        lat: -22.9068,
+                        lng: -43.1729
                     }]
                 },
                 {
@@ -586,7 +586,7 @@ $("li").on("click", function () {
                     placeName: "Billy McNeill (Glasgow, Scotland)",
                     LatLng: [{
                         lat: 55.8195,
-                        lng: 4.0077
+                        lng: -4.0077
                     }]
                 },
                 {
@@ -614,14 +614,14 @@ $("li").on("click", function () {
                     placeName: "Andres Iniesta (Fuentealbilla, Spain)",
                     LatLng: [{
                         lat: 39.2675,
-                        lng: 1.5511
+                        lng: -1.5511
                     }]
                 },
                 {
                     placeName: "Roy Keane (Cork, Ireland)",
                     LatLng: [{
                         lat: 51.8985,
-                        lng: 8.4756
+                        lng: -8.4756
                     }]
                 },
                 {
@@ -635,7 +635,7 @@ $("li").on("click", function () {
                     placeName: "Paul Scholes (Salford, England)",
                     LatLng: [{
                         lat: 53.4875,
-                        lng: 2.2901
+                        lng: -2.2901
                     }]
                 },
                 {
@@ -663,49 +663,49 @@ $("li").on("click", function () {
                     placeName: "Graeme Souness (Edinburgh, Scotland)",
                     LatLng: [{
                         lat: 55.9533,
-                        lng: 3.1883
+                        lng: -3.1883
                     }]
                 },
                 {
                     placeName: "Bobby Charlton (Ashington, England)",
                     LatLng: [{
                         lat: 55.1830,
-                        lng: 1.5660
+                        lng: -1.5660
                     }]
                 },
                 {
                     placeName: "Diego Maradona (Lanús, Argentina)",
                     LatLng: [{
-                        lat: 34.7016,
-                        lng: 58.4014
+                        lat: -34.7016,
+                        lng: -58.4014
                     }]
                 },
                 {
                     placeName: "Pele (Três Corações, Brazil)",
                     LatLng: [{
-                        lat: 21.6973,
-                        lng: 45.2563
+                        lat: -21.6973,
+                        lng: -45.2563
                     }]
                 },
                 {
                     placeName: "Ronaldo (Rio de Janeiro)",
                     LatLng: [{
-                        lat: 22.8068,
-                        lng: 43.1729
+                        lat: -22.8068,
+                        lng: -43.1729
                     }]
                 },
                 {
                     placeName: "Cristiano Ronaldo (Madeira, Portugal)",
                     LatLng: [{
                         lat: 32.7607,
-                        lng: 16.9595
+                        lng: -16.9595
                     }]
                 },
                 {
                     placeName: "Lionel Messi (Rosario, Santa Fe, Argentina)",
                     LatLng: [{
-                        lat: 32.9587,
-                        lng: 60.6930
+                        lat: -32.9587,
+                        lng: -60.6930
                     }]
                 },
                 {
@@ -739,8 +739,8 @@ $("li").on("click", function () {
                 {
                     placeName: "Ronaldinho (Porto Alegre, Brazil)",
                     LatLng: [{
-                        lat: 30.0368,
-                        lng: 51.2090
+                        lat: -30.0368,
+                        lng: -51.2090
                     }]
                 }
             
@@ -753,8 +753,8 @@ $("li").on("click", function () {
 
             function addMarkerInfo() {
                 for (var i = 0; i < markersOnMap.length; i++) {
-                    var contentString = '<div id="content"><h1>' + markersOnMap[i].placeName +
-                        '</h1><p>Lorem ipsum dolor sit amet, vix mutat posse suscipit id, vel ea tantas omittam detraxit.</p></div>';
+                    var contentString = '<div id="content"><h3>' + markersOnMap[i].placeName +
+                        '</h3></div>';
 
                     const marker = new google.maps.Marker({
                         position: markersOnMap[i].LatLng[0],
@@ -794,8 +794,11 @@ $("li").on("click", function () {
 
             function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: centerCords
+                    zoom: 2,
+                    center: {
+                        lat: 10,
+                        lng: 0
+                        }
                 });
                 addMarkerInfo();
             }

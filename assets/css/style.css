@@ -134,6 +134,17 @@ body {
     height: 100%;
 }
 
+.legends-body {
+    padding-top: 50px;
+    text-align: center;
+    width: 40%;
+    margin: 0;
+}
+
+/* .legends-body h2 {
+    text-align: center;
+} */
+
 .jumbotron.goalkeepers {
     background-color: rgba(155, 153, 153, 0.1);
     background-image: url('../images/GK.jpg');
@@ -222,6 +233,10 @@ div#map {min-height: 360px;}
 
 .list-inline-item:not(:last-child) {
     margin: 0;
+}
+
+#content {
+    color:rgb(0, 0, 0);
 }
 
 
