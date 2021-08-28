@@ -137,13 +137,9 @@ body {
 .legends-body {
     padding-top: 50px;
     text-align: center;
-    width: 40%;
-    margin: 0;
+    width: 50%;
 }
 
-/* .legends-body h2 {
-    text-align: center;
-} */
 
 .jumbotron.goalkeepers {
     background-color: rgba(155, 153, 153, 0.1);
@@ -225,8 +221,9 @@ body {
     color:#000;
 }
 
-.map-text {
+#map-text {
     text-align: center;
+    padding: auto;
 }
 
 div#map {min-height: 360px;}
@@ -252,10 +249,6 @@ div#map {min-height: 360px;}
     background-position: center center;
 }
 
-/* .eleven-intro {
-    text-align: center;
-    padding: 50px;
-} */
 
 .pitch-image ul {
     margin: 0;
@@ -392,19 +385,28 @@ div#map {min-height: 360px;}
 
 /* ---------------------------------------Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1007px) {
 
-    
+    .legends-body {
+        width: 80%;
+    }   
     
 }
+
+@media screen and (max-width: 768px) {
+
+    .box img {
+        display: none;
+    }
+
+ 
+}    
 
 @media screen and (max-width: 576px) {
     
     .header-area a h1 {
-        /* color: #5d0000; */
         text-align: center;
         padding-top: 30px;
-        /* font-family: Italianno, sans-serif; */
         font-size: 75px;
     
     }

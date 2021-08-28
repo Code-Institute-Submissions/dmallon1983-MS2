@@ -14,21 +14,16 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 
     -   #### Visitor Goals
 
-        1. As a visitor, I want to understand the purpose of this site, background of the company and the range/type of products available.
+        1. As a visitor, I want to understand the purpose of this site and site functionality.
         2. As a visitor, I want to be able to explore the site easily using clearly identified links whilst always be able to quickly return to the homepage.
-        3. As a visitor, I want to be able to view testimonials from previous customers to determine the quality of the product being advertised.
-        4. As a visitor, I want to view previous work by the company to get a visual representation of their work.
-        5. As a visitor, I want to be able to view the company's online profile on social media platforms to view their previous work.
-
-    - #### Customer Goals
-
-        1. As a customer, I want to be able to complete the same goals as a Visitor but have the option to contact the company to request their services via an online form.
+        3. As a visitor, I want to be receive feedback from interaction with the site.
+        4. As a visitor, I want to be able to view the company's online profile on social media platforms to view their previous work.
 
     -   #### Owner Goals
 
-        1. As the site owner, I want to be able to inform customers of the background of the business while informing them of services available.
+        1. As the site owner, I want to provide users with a good UX which will allow them to suggest the site to other users.
         2. As the site owner, I want to be able to advertise my products in an online gallery for customers to view products available.
-        3. As the site owner, I want customers to be able to submit their name, email address and type of product category they would like with the added option of a text area to male bespoke requests.
+        3. As the site owner, I want customers to be able to submit their selections and supply them feedback on succesful submissions.
 
     -   ### Design
         #### Colour Scheme and Site Theme
@@ -59,6 +54,7 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JS](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -72,6 +68,7 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
+1. [JQuery:]
 
 ## Testing
 
