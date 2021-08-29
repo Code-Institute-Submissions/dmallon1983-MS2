@@ -265,6 +265,17 @@ div#map {min-height: 360px;}
     text-align: center;
 }
 
+.text-input {
+    font-family: Ubuntu, 'PT Sans';
+    color: #000;
+    display: inline;
+    height: 25px;
+    position: relative;
+    margin: 5px 0 20px 0;
+    border: 1px solid #606160;
+    border-radius: 2px;
+}
+
 .box img {
     text-align: center;
     border: 1px solid #ddd;
@@ -307,16 +318,16 @@ div#map {min-height: 360px;}
     padding: 20px 25%;
 }
 
-.text-input {
+/* .text-input {
     font-family: Ubuntu, 'PT Sans';
     color: #000;
-    width: 100%;
+    display: inline;
     height: 25px;
     position: relative;
     margin: 5px 0 20px 0;
     border: 1px solid #606160;
     border-radius: 2px;
-}
+} */
 
 .signup-form {
     color: #fff;

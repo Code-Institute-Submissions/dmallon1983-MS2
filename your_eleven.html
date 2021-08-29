@@ -37,7 +37,7 @@
                         </ul>
                     </div>
     </header>
-    <section class="container-fluid pitch-image">
+    <section class="container-fluid contactForm pitch-image">
         <!-- <div class="col-6 offset-3 eleven-intro">
             <h2>Choose Your Legends</h2>
         </div>
@@ -46,13 +46,24 @@
             <p>Choose your 11 in the positions below</p>
         </div> -->
         <div class="container pitch">
-            <form id="myForm">
+            <form onsubmit="return sendMail(this);" id="signup-form">
+                <span id="contactDetails list-inline-block">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" required class="text-input" placeholder="your name">
+                </span>
+                <span>
+                    <label for="email">Email Address:</label>
+                    <input id="email" type="email" name="email_address" required class="text-input"
+                        placeholder="yourname@email">
+                </span>
+            </div>
                 <div class="row gk">
                     <div class="col-4 offset-4 list-inline-block">
                         <ul>
                             <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown goalKeeper">
                                     
                                         <select id="selectGoalKeeper">
                                             <option>Choose a GK</option>
@@ -68,7 +79,7 @@
                         <ul>
                             <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown rightBack">
                                     
                                         <select id="selectRightBack">
                                             <option>Choose a DF</option>
@@ -78,7 +89,7 @@
                             </li>
                             <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown rightCentreBack">
 
                                     <select id="selectRightCentreBack">
                                         <option>Choose a DF</option>
@@ -88,7 +99,7 @@
                             </li>
                             <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown leftCentreBack">
 
                                     <select id="selectLeftCentreBack">
                                         <option>Choose a DF</option>
@@ -98,7 +109,7 @@
                             </li>
                             <li class="col-2 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown leftBack">
 
                                     <select id="selectLeftBack">
                                         <option>Choose a DF</option>
@@ -114,7 +125,7 @@
                         <ul>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown rightMid">
                                     
                                         <select id="selectRightMidfielder">
                                             <option>Choose a MF</option>
@@ -124,7 +135,7 @@
                             </li>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown leftMid">
                                     <select id="selectLeftMidfielder">
                                         <option>Choose a MF</option>
                                     </select>
@@ -138,7 +149,7 @@
                         <ul>
                             <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown attMid">
                                     <select id="selectAttackingMidfielder">
                                         <option>Choose a MF</option>
                                     </select>
@@ -152,7 +163,7 @@
                         <ul>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown rightForward">
                                     
                                         <select id="selectRightForward">
                                             <option>Choose a FW</option>
@@ -162,7 +173,7 @@
                             </li>
                             <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown leftForward">
                                     <select id="selectLeftForward">
                                         <option>Choose a FW</option>
                                     </select>
@@ -176,7 +187,7 @@
                         <ul>
                             <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
                                     alt="male silhouette">
-                                <div class="player-dropdown">
+                                <div class="player-dropdown centreForward">
                                     <select id="selectCentreForward">
                                         <option>Choose a FW</option>
                                     </select>
@@ -187,7 +198,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div id="submit-button">
-                        <button type="button" class="btn btn-light btn-lg"><a href="legends.html">Submit</a></button>
+                        <input class="btn btn-primary" type="submit" value="Submit">
                     </div>
                 </div>
             </form>
@@ -230,6 +241,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/your11.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -239,7 +251,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="assets/js/your11.js"></script>
+    
 </body>
 
 </html>
