@@ -114,16 +114,18 @@ function sendMail(contactForm) {
             "player_request_10": contactForm.leftForward.value,
             "player_request_11": contactForm.centreForward.value
         })
+
         .then(
             function (response) {
-                console.log("SUCCESS", response);
+                alert("Congratulations! You have succesfully submitted your legends 11.\nPlease visit our social media sites at the bottom of the page to see if you've been successful!!!", response); 
             },
             function (error) {
-                console.log("FAILED", error);
+                console.log("FAILED", error);   //change to alert
             }
         );
     return false;
 }
+
 
 
 
@@ -133,6 +135,6 @@ form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
         event.preventDefault();
         form.submit();
-        alert("Congratulations! You have succesfully submitted your legends 11.\nPlease visit our social media sites at the bottom of the page to see if you've been successful!!!");
+        // alert("Congratulations! You have succesfully submitted your legends 11.\nPlease visit our social media sites at the bottom of the page to see if you've been successful!!!");
     }
 

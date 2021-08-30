@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <script src="https://kit.fontawesome.com/b053ee9d06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Your Best 11</title>
@@ -40,218 +39,223 @@
         </div>
 
     </header>
+
+<!-- credit:  contact email structured around code institutes interactive front end material -->
+
     <section class="container-fluid contactForm pitch-image">
-        <div class="col-6 offset-3 eleven-intro">
+        <div class="eleven-intro">
             <h2>Choose Your Legends</h2>
         </div>
-        <div class="col-6 offset-3 eleven-intro">
+        <div class="eleven-intro">
             <p>Now it's up to you!</p>
-            <p>Choose your 11 in the positions below</p>
+            <p>Choose your 11 in the positions below, fill in your contact details and submit the form for the chance to be entered into our monthly prize draw.</p>
         </div>
         <div class="container pitch">
             <form onsubmit="return sendMail(this);" id="signup-form">
                 <span id="contactDetails list-inline-block">
-                <div>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" name="name" required class="text-input" placeholder="your name">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name" required class="text-input" placeholder="your name">
                 </span>
                 <span>
                     <label for="email">Email Address:</label>
                     <input id="email" type="email" name="email_address" required class="text-input"
                         placeholder="yourname@email">
                 </span>
-            </div>
-                <div class="row gk">
-                    <div class="col-4 offset-4 list-inline-block">
-                        <ul>
-                            <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown goalKeeper">
-                                    
-                                        <select id="selectGoalKeeper">
-                                            <option>Choose a GK</option>
-                                        </select>
-                                    
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row df">
-                    <div class="col list-inline-block">
-                        <ul>
-                            <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown rightBack">
-                                    
-                                        <select id="selectRightBack">
-                                            <option>Choose a DF</option>
-                                        </select>
-                                    
-                                </div>
-                            </li>
-                            <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown rightCentreBack">
+        <div class="row gk">
+            <div class="col-4 offset-4 list-inline-block">
+                <ul>
+                    <li class="list-inline-item box"><img src="assets/images/male-silhouette.png" alt="male silhouette">
+                        <div class="player-dropdown goalKeeper">
 
-                                    <select id="selectRightCentreBack">
-                                        <option>Choose a DF</option>
-                                    </select>
+                            <select id="selectGoalKeeper">
+                                <option>Choose a GK</option>
+                            </select>
 
-                                </div>
-                            </li>
-                            <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown leftCentreBack">
-
-                                    <select id="selectLeftCentreBack">
-                                        <option>Choose a DF</option>
-                                    </select>
-
-                                </div>
-                            </li>
-                            <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown leftBack">
-
-                                    <select id="selectLeftBack">
-                                        <option>Choose a DF</option>
-                                    </select>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row cm">
-                    <div class="col-10 offset-1 list-inline-block">
-                        <ul>
-                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown rightMid">
-                                    
-                                        <select id="selectRightMidfielder">
-                                            <option>Choose a MF</option>
-                                        </select>
-                                    
-                                </div>
-                            </li>
-                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown leftMid">
-                                    <select id="selectLeftMidfielder">
-                                        <option>Choose a MF</option>
-                                    </select>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row am">
-                    <div class="col-4 offset-4 list-inline-block">
-                        <ul>
-                            <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown attMid">
-                                    <select id="selectAttackingMidfielder">
-                                        <option>Choose a MF</option>
-                                    </select>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row wf">
-                    <div class="col-10 offset-1 list-inline-block">
-                        <ul>
-                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown rightForward">
-                                    
-                                        <select id="selectRightForward">
-                                            <option>Choose a FW</option>
-                                        </select>
-                                    
-                                </div>
-                            </li>
-                            <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown leftForward">
-                                    <select id="selectLeftForward">
-                                        <option>Choose a FW</option>
-                                    </select>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row cf">
-                    <div class="col-4 offset-4 list-inline-block">
-                        <ul>
-                            <li class="list-inline-item box"><img src="assets/images/male-silhouette.png"
-                                    alt="male silhouette">
-                                <div class="player-dropdown centreForward">
-                                    <select id="selectCentreForward">
-                                        <option>Choose a FW</option>
-                                    </select>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div id="submit-button">
-                        <input class="btn btn-primary" type="submit" value="Submit">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="social-links">
-            <div class="row no-gutters">
-                <div class="col">
-                    <ul class="list-inline social-area">
-                        <li class="col-3 list-inline-item" id="facebook">
-                            <a target="_blank" href="https://en-gb.facebook.com/">
-                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                <span>Facebook</span>
-                            </a>
-                        </li>
-                        <li class="col-3 list-inline-item" id="twitter">
-                            <a target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                                <span>Twitter</span>
-                            </a>
-                        </li>
-                        <li class="col-3 list-inline-item" id="instagram">
-                            <a target="_blank" href="https://www.instagram.com/">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                        <li class="col-3 list-inline-item social-item" id="pinterest">
-                            <a target="_blank" href="https://www.pinterest.co.uk/">
-                                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-                                <span>Pinterest</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
-    <script src="assets/js/your11.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    
-</body>
+        <div class="row df">
+            <div class="col list-inline-block">
+                <ul>
+                    <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown rightBack">
 
-</html>
+                            <select id="selectRightBack">
+                                <option>Choose a DF</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown rightCentreBack">
+
+                            <select id="selectRightCentreBack">
+                                <option>Choose a DF</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown leftCentreBack">
+
+                            <select id="selectLeftCentreBack">
+                                <option>Choose a DF</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li class="col-3 col-md-2 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown leftBack">
+
+                            <select id="selectLeftBack">
+                                <option>Choose a DF</option>
+                            </select>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row cm">
+            <div class="col-10 offset-1 list-inline-block">
+                <ul>
+                    <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown rightMid">
+
+                            <select id="selectRightMidfielder">
+                                <option>Choose a MF</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown leftMid">
+                            <select id="selectLeftMidfielder">
+                                <option>Choose a MF</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row am">
+            <div class="col-4 offset-4 list-inline-block">
+                <ul>
+                    <li class="list-inline-item box"><img src="assets/images/male-silhouette.png" alt="male silhouette">
+                        <div class="player-dropdown attMid">
+                            <select id="selectAttackingMidfielder">
+                                <option>Choose a MF</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row wf">
+            <div class="col-10 offset-1 list-inline-block">
+                <ul>
+                    <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown rightForward">
+
+                            <select id="selectRightForward">
+                                <option>Choose a FW</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li class="col-4 list-inline-item box"><img src="assets/images/male-silhouette.png"
+                            alt="male silhouette">
+                        <div class="player-dropdown leftForward">
+                            <select id="selectLeftForward">
+                                <option>Choose a FW</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row cf">
+            <div class="col-4 offset-4 list-inline-block">
+                <ul>
+                    <li class="list-inline-item box"><img src="assets/images/male-silhouette.png" alt="male silhouette">
+                        <div class="player-dropdown centreForward">
+                            <select id="selectCentreForward">
+                                <option>Choose a FW</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="submit-button">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+        </div>
+        </section>
+
+        <!-- Footer Area. Styled using Grid system -->
+        <!-- links in this section are to the site homepage only as this is a demo -->
+
+
+        <footer>
+            <div class="social-links">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul class="list-inline social-area">
+                            <li class="col-3 list-inline-item" id="facebook">
+                                <a target="_blank" href="https://en-gb.facebook.com/">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="col-3 list-inline-item" id="twitter">
+                                <a target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="col-3 list-inline-item" id="instagram">
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li class="col-3 list-inline-item social-item" id="pinterest">
+                                <a target="_blank" href="https://www.pinterest.co.uk/">
+                                    <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                    <span>Pinterest</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/your11.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        </body>
+
+        </html>

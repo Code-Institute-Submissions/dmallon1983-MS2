@@ -223,6 +223,9 @@ div#map {min-height: 360px;}
     background-position: center center;
 }
 
+.eleven-intro {
+    text-align: center;
+}
 
 .pitch-image ul {
     margin: 0;
