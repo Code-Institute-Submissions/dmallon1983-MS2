@@ -4,9 +4,9 @@
 
 This is my submission for MS2 in the Code Institute Full Stack Developer diploma. This website is for a football dream team 11, allowing the user to read up about legends of the game before submitting a list of players, selected via dropdown, through emailJS. This website was built with using the 'mobile first' principle and is fully responsive across all devices.
 
-<h2 align="center"><img src="https://imgur.com/aFXnvXF"></h2>
-<h2 align="center"><img src="https://imgur.com/MGMrDu0"></h2>
-<h2 align="center"><img src="https://imgur.com/O80vfr2"></h2>
+<h2 align="center"><img src="https://i.imgur.com/aFXnvXF.jpg"></h2>
+<h2 align="center"><img src="https://i.imgur.com/MGMrDu0.jpg"></h2>
+<h2 align="center"><img src="https://i.imgur.com/O80vfr2.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -37,11 +37,11 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 
     -   Wireframes created using Balsamiq
 
-    -   Home Page Wireframe - [View](https://imgur.com/g1BbhqO)
+    -   Home Page Wireframe - [View](https://i.imgur.com/g1BbhqO.jpg)
 
-    -   Legends Page Wireframe - [View](https://imgur.com/bJk7BXA)
+    -   Legends Page Wireframe - [View](https://i.imgur.com/bJk7BXA.jpg)
 
-    -   Your 11 Page Wireframe - [View](https://imgur.com/bJk7BXA)
+    -   Your 11 Page Wireframe - [View](https://i.imgur.com/bJk7BXA.jpg)
 
 
 ## Features
