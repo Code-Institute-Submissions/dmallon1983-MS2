@@ -78,7 +78,7 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   HTML: All pages successfully tested using W3C HTML Validator with no errors
--   CSS: All pages successfully tested using W3C CSS Validator with no errors
+-   CSS: All pages  tested using W3C CSS Validator unknown errors shown.
 
 ### Testing User Stories from User Experience (UX) Section
 
