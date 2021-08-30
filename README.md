@@ -4,9 +4,9 @@
 
 This is my submission for MS2 in the Code Institute Full Stack Developer diploma. This website is for a football dream team 11, allowing the user to read up about legends of the game before submitting a list of players, selected via dropdown, through emailJS. This website was built with using the 'mobile first' principle and is fully responsive across all devices.
 
-<h2 align="center"><img src="https://i.imgur.com/8IRxlLW.jpg"></h2>
-<h2 align="center"><img src="https://i.imgur.com/aEItrxf.jpg"></h2>
-<h2 align="center"><img src="https://i.imgur.com/gRE0YeA.jpg"></h2>
+<h2 align="center"><img src="https://imgur.com/aFXnvXF"></h2>
+<h2 align="center"><img src="https://imgur.com/MGMrDu0"></h2>
+<h2 align="center"><img src="https://imgur.com/O80vfr2"></h2>
 
 ## User Experience (UX)
 
@@ -22,7 +22,7 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
     -   #### Owner Goals
 
         1. As the site owner, I want to provide users with a good UX which will allow them to suggest the site to other users.
-        2. As the site owner, I want to be able to advertise my products in an online gallery for customers to view products available.
+        2. As the site owner, I want to be able to provide users with information for the players shown.
         3. As the site owner, I want customers to be able to submit their selections and supply them feedback on succesful submissions.
 
     -   ### Design
@@ -35,19 +35,21 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 
 -   ### Wireframes
 
-    -   Wireframes in paper format due to local issue with Balsamiq
+    -   Wireframes created using Balsamiq
 
-    -   Home Page Wireframe - [View](https://i.imgur.com/pMkv3Ct.jpg)
+    -   Home Page Wireframe - [View](https://imgur.com/g1BbhqO)
 
-    -   Cakes Page Wireframe - [View](https://i.imgur.com/CkHb8hG.jpg)
+    -   Legends Page Wireframe - [View](https://imgur.com/bJk7BXA)
 
-    -   Contact Page Wireframe - [View](https://i.imgur.com/fCay2Sz.jpg)
+    -   Your 11 Page Wireframe - [View](https://imgur.com/bJk7BXA)
 
 
 ## Features
 
 -   Site contains several active links designed to allow the user to easily navigate through the site. 
--   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an anchor tag which will open the image in a new tab to allow the user to view an enlarged image.
+-   All images in the 'Legends' page are styled with circular border. All images of players, when clicked, will open a pop up modal window detailing the players bio and statistics.
+-   Legends page contains google maps API with marker showing players place of birth.
+-   Your 11 page allows the user to select their own 11 from dropdown menus and submit these selections to the owner via email JS.
 -   Site was built with using the 'mobile first' principle and is fully responsive across all devices.
 
 ## Languages Used
@@ -61,14 +63,15 @@ This is my submission for MS2 in the Code Institute Full Stack Developer diploma
 1. [Bootstrap 5.0.0:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Ubuntu, Anton and PT Sans' fonts into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [JQuery:]
+1. [JQuery:](https://jquery.com/)
+    - jquery was used to link data from legends.js to the modal pop up in legends.html
 
 ## Testing
 
@@ -81,48 +84,39 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Visitor Goals
 
-    -   1. As a visitor, I want to understand the purpose of this site and the background of the company.
+    -   1. As a visitor, I want to understand the purpose of this site and site functionality.
 
-        -   The site instantly lets you know what the product is due to the imagery provided in both the header and main 'About Us' section.
-        -   The 'About Us' section informs the user of the background of the company and a clear desrption of the services provided.
+        -   The site instantly lets you know it's purpose due to the imagery provided in both the header and opening text below the nav bar.
+        -   The "Get Started!" button helps the flow of the site as it immediately takes the user onto the Legends.html page where again, the opening text is clear in describing the sites purpose.
 
         2. As a visitor, I want to be able to explore the site easily using clearly identified links whilst always be able to quickly return to the homepage.
 
         -   The site contains well laid out links in the navigation bar and the header logo is also a clickable link which returns the user to the 'Home' page regardless of what page they are on.
-        -   The 'About Us' section has links built into the text element which direct the user to the pages being suggested.
+        -   The majority of the text on the page contains a link inside which can redirect the user to the page they wish to visit.
 
-        3. As a visitor, I want to be able to view testimonials from previous customers to determine the quality of the product being advertised.
+        3. As a visitor, I want to be receive feedback from interaction with the site.
 
-        -   Below the 'About Us' section on the Home page is a section containing testimonials from previous customers.
+        -   The form will return an alert upon submission informing the user of a successful submission.
 
-        4. As a visitor, I want to view previous work by the company to get a visual representation of their work.
+        4. As a visitor, I want to be able to view the company's online profile on social media platforms to view their previous work.
 
-        -   The 'Cakes' page contains several images of products available to the customers.
-        -   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an anchor tag which will open the image in a new tab to allow the user to view an enlarged image.
+        -   The footer on all pages contains links to the company social media platforms.
 
-        5. As a visitor, I want to be able to view the company's online profile on social media platforms to view their previous work.
-
-        -   In the footer section, available on all pages, are links to social media platforms for the customer to select. Links open in new tabs.
-
-    - #### Customer Goals
-
-        1. As a customer, I want to be able to complete the same goals as a Visitor but have the option to contact the company to request their services via an online form.
-
-        -   The 'Contact' page contains a form which allows the customer to fill out their details, select a category in the form of a radio button and input text to inform the site owner of any requirements and requests.
 
     -   #### Owner Goals
 
-        1. As the site owner, I want to be able to inform customers of the background of the business while informing them of services available.
+        1. As the site owner, I want to provide users with a good UX which will allow them to suggest the site to other users.
 
-        -   The 'About Us' section informs the user of the background of the company and a clear desrption of the services provided.
+        -   The site is laid out in a simplistic style to avoid confusion of the sites purpose for the user.
+        -   The site uses various links to improve the flow of the site for a user.
 
-        2. As the site owner, I want to be able to advertise my products in an online gallery for customers to view products available.
+        2. As the site owner, I want to be able to provide users with information for the players shown.
 
-        -   The 'Cakes' page allows the owner to show images of products available to the customer.
+        -   The images of players on the legends.html page will open a pop up modal window when clicked giving information on the players shown.
 
-        3. As the site owner, I want customers to be able to submit their name, email address and type of product category they would like with the added option of a text area to male bespoke requests.
+        3. As the site owner, I want customers to be able to submit their selections and supply them feedback on succesful submissions.
 
-        -   The 'Contact' page contains a form which allows the customer to fill out their details, select a category in the form of a radio button and input text to inform the site owner of any requirements and requests.
+        -   The player selection in the Your 11 page is wrapped in a form which will be submitted to the owner upon completion. Once submitted the form will open an alert box notifying the user of a successful submission. 
 
 
 ### Further Testing
@@ -138,7 +132,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 3. Responsive testing done using Chrome Developer tools. Site shown to be working correctly.
 4. User testing done by family. Grammatical errors and improvements completed.
 5. User stories put to test using family members. Answers satisfactory.
-6. Form on Contact page completed and Code Institute success message received.  
+6. Form on Your 11 page tested to show alert on submission and successful email sent to emailJS  
 
 ### Bugs
 
@@ -146,14 +140,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 1. Installing Bootstrap 5.0.0 issues
     - After installing Bootstrap 5.0.0. any anchor tags inherited a text-decoration border. All anchor tags containing text had to be targeted and the text-decroation set to none.
-2. Input Form on Contact Page
-    - The relative positioning of the Input form as causing responsive design issues so code adjusted to position table as a min-width with all round equal padding.
-    - The text area col value was causing issues when moving to smaller screens. I had to override the textarea column value with a max-width value in the CSS file to make the textarea responsive
-3. Footer Social Media links
-    - I could not get these to behave in the Grid system as the 4th link would overflow onto the line below. I removed the letter spacing from the text which solved this issue.
+2. Dropdown List readover
+    - The dropdown lists of players in the your_eleven page would not repeat for multiple items. I had to rename every position with an individual id to solve this.
+    
+3. Navbar issue
+   - The navbar toggler function was causing styling issues when switching to mobile. This was removed and replaced with a standard navbar.
 
-4. X-axis Overflow on all pages
-    - There was a horizontal overflow on all pages at first release. Issue corrected by switching the x-overflow to hidden.
 
 
 #### Known Bugs
@@ -216,6 +208,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Code snippets and methods used from Code Institutes Full Stack Web Developer course material
 
+-   Stack Overflow assistance from several users giving guidance on how to correct JS issues.
+
 ### Content
 
 -   Majority of content written by developer with external sources credited in comments on files.
@@ -227,12 +221,14 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Media
 
 -   Site header image taken from [Shutterstock](https://www.shutterstock.com/)
--   'Home' page background image taken from [Pexels](https://www.pexels.com/)
--   Images in 'Cakes' page gallery provided by Celaine Mallon
--   Embedded Youtube video in 'Cakes' page property of Youtube user Trebonis
+-   Pitch images used in background on legends.html and your_eleven.html taken from [Pexels](https://www.pptback.com/)
+-   Google Maps API taken from google.com
+-   Player images taken from various sites on google image. Whole images not used, screengrabs of heads only.
 
 ### Acknowledgements
 
 -   Code Institute for the fantastic course material and media
 
 -   Slack community for support throughout the whole project.
+
+-   Stack Overflow community for the same assistance.
